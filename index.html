@@ -7,42 +7,38 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
-        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <link rel="stylesheet" href="css/style.css" />
         <script>
-            tailwind.config = {
-                darkMode: 'class',
-                theme: {
-                    extend: {
-                        spacing: {
-                            13: '3.25rem',
-                        },
-                        fontFamily: {
-                            inter: ['Inter'],
-                        },
-                        colors: {
-                            wpu: '#bada55',
-                            kopi: '#c0ffee',
-                        },
-                        animation: {
-                            'spin-slow': 'spin 3s linear infinite',
-                            'goyang': 'goyang 1s ease-in-out infinite',
-                        },
-                        keyframes: {
-                            goyang: {
-                                '0%, 100%' : { transform: 'rotate(-3deg)'},
-                                '50%' : { transform: 'rotate(3deg)' }
-                            }
-                        },
-                    },
-                },
-            };
+          //  tailwind.config = {
+          //      darkMode: 'class',
+          //      theme: {
+          //          extend: {
+          //              spacing: {
+          //                  13: '3.25rem',
+          //              },
+          //              fontFamily: {
+          //                  inter: ['Inter'],
+          //              },
+          //              colors: {
+          //                  wpu: '#bada55',
+          //                  kopi: '#c0ffee',
+          //              },
+          //              animation: {
+          //                  'spin-slow': 'spin 3s linear infinite',
+          //                  'goyang': 'goyang 1s ease-in-out infinite',
+          //              },
+          //              keyframes: {
+          //                  goyang: {
+          //                      '0%, 100%' : { transform: 'rotate(-3deg)'},
+          //                      '50%' : { transform: 'rotate(3deg)' }
+          //                  }
+          //              },
+          //          },
+          //      },
+          //  };
         </script>
         <title>Belajar TailwindCSS</title>
-        <style type="text/tailwindcss">
-            #toggle:checked ~ label div.toggle-circle {
-                @apply translate-x-3;
-            }
-        </style>
     </head>
     <body class="dark:bg-slate-800 dark:text-slate-200">
         <h1 class="text-8xl font-bold text-center my-10">Mari Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">TailwindCSS</span></h1>
@@ -204,37 +200,39 @@
             <h2 class="h15-text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome to WPU</span></h2>
             <div class="h-15 text-lg font-bold text-slate-600  md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@willyprajudi19</span></div>
 
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-                <div class="w-full h-full bg-[url('img/0_Swindon-Town-2-v-Manchester-United-2.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
+            <div class="group grid-card">
+                <div class="grid-card-img bg-[url('img/0_Swindon-Town-2-v-Manchester-United-2.jpg')]"></div>
             </div>
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="group grid-card md:col-start-3">
                 <div class="w-full h-full bg-[url('img/26th-MAY-1999-UEFA-Champions-League-Final-Barcelona-Spain-Manchester-United-2-v-Bayern-Munich-1.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
             </div>
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="group grid-card">
                 <div class="w-full h-full bg-[url('img/CT7jaAVWwAA5Jb-.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
             </div>
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="group grid-card">
                 <div class="w-full h-full bg-[url('img/david-beckham-manchester-united-fc-22-may-1999-HTCB13.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
             </div>
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="group grid-card">
                 <div class="w-full h-full bg-[url('img/ExsVndNUYAciGdv.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
             </div>
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="group grid-card md:col-start-2">
                 <div class="w-full h-full bg-[url('img/gettyimages-56974985-2048x2048.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
             </div>
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="group grid-card md:col-start-4">
                 <div class="w-full h-full bg-[url('img/gettyimages-121020067-2048x2048.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
             </div>
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="group grid-card">
                 <div class="w-full h-full bg-[url('img/gettyimages-154275757-2048x2048.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
             </div>
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="group grid-card md:col-start-3">
                 <div class="w-full h-full bg-[url('img/gettyimages-973741888-2048x2048.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
             </div>
-            <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
+            <div class="group grid-card md:col-start-3">
                 <div class="w-full h-full bg-[url('img/gettyimages-973815978-2048x2048.jpg')] bg-cover bg-center absolute group-hover:rotate-125 group-hover:rotate-12 transition-all duration-500"></div>
             </div>
         </div>
+
+        <h1>Hello WPU</h1>
 
         <div class="mb-96"></div>
 
