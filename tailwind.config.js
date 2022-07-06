@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html'],
+  content: ["./index.html"],
   darkMode: 'class',
   theme: {
     extend: {
       spacing: {
-       13: '3.25rem',
+        13: '3.25rem',
       },
       fontFamily: {
         inter: ['Inter'],
@@ -20,8 +20,8 @@ module.exports = {
       },
       keyframes: {
         goyang: {
-              '0%, 100%' : { transform: 'rotate(-3deg)'},
-              '50%' : { transform: 'rotate(3deg)' }
+          '0%, 100%' : { transform: 'rotate(-3deg)'},
+          '50%' : { transform: 'rotate(3deg)' }
         }
       },
     },
