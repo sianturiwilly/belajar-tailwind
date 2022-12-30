@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                spacing: {
+                    13: '3.25rem',
+                },
+            },
+          },
+        };
+    </script>
+    <title>Belajar TailwindCSS</title>
+    <style type="text/tailwindcss">
+        * {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mari Belajar TailwindCSS</h1>
+
+    <section class="mb-10">
+        <h2>Spacing</h2>
+        <div class="m-13">Margin</div>
+        <div class="py-8">Padding</div>
+    </section>
+
+    <section class="mb-10">
+        <h2>Sizing</h2>
+        <div class="w-32 h-32">Kotak 1</div>
+    </section>
+
+    <section class="mb-10">
+        <h2 class="mb-4">Belajar Mengenai Typography</h2>
+        <div class="mb-4">By Willi Sianturi, 29 Desember 2022</div>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, itaque!</p>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde dolorem deserunt aperiam, exercitationem minus harum pariatur nulla mollitia corrupti.</p>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique ea velit nihil animi. Neque eius obcaecati eos cumque ipsam enim voluptatem quae, nobis atque fugit quos quisquam voluptatum vero?</p>
+    </section>
+</body>
+</html>
