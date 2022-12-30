@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -12,36 +15,39 @@
                 spacing: {
                     13: '3.25rem',
                 },
+                fontFamily: {
+                    inter: ['Inter'],
+                },
+                colors: {
+                    wpu: '#bada55',
+                    kopi: '#c0ffee',
+                },
             },
           },
         };
     </script>
     <title>Belajar TailwindCSS</title>
-    <style type="text/tailwindcss">
-        * {
-            border: 1px solid red;
-        }
-    </style>
+    <style type="text/tailwindcss"></style>
 </head>
 <body>
-    <h1>Mari Belajar TailwindCSS</h1>
+    <h1 class="text-8xl font-bold text-center my-10">Mari Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">TailwindCSS</span></h1>
 
-    <section class="mb-10">
-        <h2>Spacing</h2>
+    <section class="mb-10 bg-gradient-to-br from-indigo-200 via-red-200 to-yellow-100">
+        <h2 class="text-3xl text-center">Spacing</h2>
         <div class="m-13">Margin</div>
         <div class="py-8">Padding</div>
     </section>
 
-    <section class="mb-10">
-        <h2>Sizing</h2>
-        <div class="w-32 h-32">Kotak 1</div>
+    <section class="mb-10 bg-green-200">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-32 h-32 bg-kopi">Kotak 1</div>
     </section>
 
-    <section class="mb-10">
-        <h2 class="mb-4">Belajar Mengenai Typography</h2>
-        <div class="mb-4">By Willi Sianturi, 29 Desember 2022</div>
-        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, itaque!</p>
-        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde dolorem deserunt aperiam, exercitationem minus harum pariatur nulla mollitia corrupti.</p>
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+        <h2 class="mb-2 text-4xl font-bold">Belajar Mengenai Typography</h2>
+        <div class="mb-4 text-lg text-gray-500">By <a href="#" class="text-gray-700 font-semibold">Willi Chrisdeardo Sianturi</a>, 30 Desember 2022</div>
+        <p class="mb-4">Lorem ipsum dolor sit amet <a href="#" class="underline font-semibold text-blue-600">consectetur</a> adipisicing elit. Quae, itaque!</p>
+        <blockquote class="mb-4 italic font-thin text-xl">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde dolorem deserunt aperiam, exercitationem minus harum pariatur nulla mollitia corrupti."</blockquote>
         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique ea velit nihil animi. Neque eius obcaecati eos cumque ipsam enim voluptatem quae, nobis atque fugit quos quisquam voluptatum vero?</p>
     </section>
 </body>
